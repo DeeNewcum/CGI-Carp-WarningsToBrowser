@@ -54,6 +54,9 @@ like($one_warning_one_error,
 
 # Creates a child process running perl, and passes it some Perl code to execute
 # via -e. Returns what the child process outputs via its STDOUT.
+#
+# TODO: Does this work properly under Win32? (I assume it works okay under
+# Cygwin?)
 sub perl_subprocess {
     my ($perl_code) = @_;
     open(my $child_stdout, '-|',

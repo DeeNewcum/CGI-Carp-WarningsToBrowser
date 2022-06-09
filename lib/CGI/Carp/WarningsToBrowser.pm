@@ -14,6 +14,8 @@ that displays the warnings loudly and boldly
 The author feels that it's important to expose warnings as early as possible in
 the software development lifecycle, preferably by the same developer who created
 them, as part of the "L<shift left|https://devopedia.org/shift-left>" effort.
+"Shift left" basically means that the earlier in the SDLC that a problem can be
+found, the cheaper it is to fix it.
 
 =head1 SYNOPSIS
 
