@@ -6,7 +6,7 @@ that displays the warnings loudly and boldly
 # SYNOPSIS
 
 Put this at the top of your CGI script (the earlier the better, otherwise some
-warnings won't be captured):
+warnings might not get captured):
 
     use CGI::Carp::WarningsToBrowser;
 
@@ -16,14 +16,14 @@ for dev and test environments, not for prod, so it's a good idea to use [if](htt
 
     use if $is_dev, 'CGI::Carp::WarningsToBrowser';
 
-The author feels that it's important to expose warnings early in the software
-development lifecycle, as part of the "[shift
-left](https://devopedia.org/shift-left)" effort.
+The author feels that it's important to expose warnings as early as possible in
+the software development lifecycle, preferably by the same developer who created
+them, as part of the "[shift left](https://devopedia.org/shift-left)" effort.
 
 # HANDLING ERRORS
 
-This module does not handle fatal errors. The author feels that [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp)
-does an adequate job at accomplishing that task.
+This module does not handle fatal errors, as [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp) seems to do an
+adequate job at that task.
 
 # AUTHOR
 

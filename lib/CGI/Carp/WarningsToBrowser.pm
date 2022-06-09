@@ -12,7 +12,7 @@ that displays the warnings loudly and boldly
 =head1 SYNOPSIS
 
 Put this at the top of your CGI script (the earlier the better, otherwise some
-warnings won't be captured):
+warnings might not get captured):
 
  use CGI::Carp::WarningsToBrowser;
 
@@ -22,14 +22,14 @@ for dev and test environments, not for prod, so it's a good idea to use L<if>:
 
  use if $is_dev, 'CGI::Carp::WarningsToBrowser';
 
-The author feels that it's important to expose warnings early in the software
-development lifecycle, as part of the "L<shift
-left|https://devopedia.org/shift-left>" effort.
+The author feels that it's important to expose warnings as early as possible in
+the software development lifecycle, preferably by the same developer who created
+them, as part of the "L<shift left|https://devopedia.org/shift-left>" effort.
 
 =head1 HANDLING ERRORS
 
-This module does not handle fatal errors. The author feels that L<CGI::Carp>
-does an adequate job at accomplishing that task.
+This module does not handle fatal errors, as L<CGI::Carp> seems to do an
+adequate job at that task.
 
 =head1 AUTHOR
 
