@@ -9,6 +9,12 @@ our $VERSION = 0.01;
 CGI::Carp::WarningsToBrowser - A version of L<CGI::Carp>'s warningsToBrowser()
 that displays the warnings loudly and boldly
 
+=head1 RATIONALE
+
+The author feels that it's important to expose warnings as early as possible in
+the software development lifecycle, preferably by the same developer who created
+them, as part of the "L<shift left|https://devopedia.org/shift-left>" effort.
+
 =head1 SYNOPSIS
 
 Put this at the top of your CGI script (the earlier the better, otherwise some
@@ -22,14 +28,10 @@ for dev and test environments, not for prod, so it's a good idea to use L<if>:
 
  use if $is_dev, 'CGI::Carp::WarningsToBrowser';
 
-The author feels that it's important to expose warnings as early as possible in
-the software development lifecycle, preferably by the same developer who created
-them, as part of the "L<shift left|https://devopedia.org/shift-left>" effort.
-
 =head1 HANDLING ERRORS
 
-This module does not handle fatal errors, because L<CGI::Carp> seems to do an
-adequate job at that task.
+This module does not handle fatal errors, because L<CGI::Carp> does an adequate
+job at that task.
 
 =head1 COMPATIBILITY
 

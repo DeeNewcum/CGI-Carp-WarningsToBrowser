@@ -1,8 +1,13 @@
-[![Actions Status](https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser/actions/workflows/test.yml/badge.svg)](https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser/actions)
 # NAME
 
 CGI::Carp::WarningsToBrowser - A version of [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp)'s warningsToBrowser()
 that displays the warnings loudly and boldly
+
+# RATIONALE
+
+The author feels that it's important to expose warnings as early as possible in
+the software development lifecycle, preferably by the same developer who created
+them, as part of the "[shift left](https://devopedia.org/shift-left)" effort.
 
 # SYNOPSIS
 
@@ -17,14 +22,10 @@ for dev and test environments, not for prod, so it's a good idea to use [if](htt
 
     use if $is_dev, 'CGI::Carp::WarningsToBrowser';
 
-The author feels that it's important to expose warnings as early as possible in
-the software development lifecycle, preferably by the same developer who created
-them, as part of the "[shift left](https://devopedia.org/shift-left)" effort.
-
 # HANDLING ERRORS
 
-This module does not handle fatal errors, because [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp) seems to do an
-adequate job at that task.
+This module does not handle fatal errors, because [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp) does an adequate
+job at that task.
 
 # COMPATIBILITY
 
