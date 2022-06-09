@@ -101,6 +101,8 @@ sub _print_warnings {
         # The HTTP response header *probably* hasn't been output yet, so output
         # one of our own.
         # (though see https://perldoc.perl.org/functions/tell for caveats)
+
+        # TODO: Do we want to output an encoding along with this?
         print STDOUT "Status: 500\n";
         print STDOUT "Content-type: text/html\n\n";
     }
