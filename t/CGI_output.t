@@ -2,17 +2,17 @@ use strict;
 use Test::More tests => 5;
 use English;
 
-unlike(perl_subprocess('
+unlike(perl_subprocess(q{
         use CGI::Carp::WarningsToBrowser;
-    '),
+    }),
     qr/Content-type:/i,
     "zero warnings, zero errors");
 
 
-like(perl_subprocess('
+like(perl_subprocess(q{
         use CGI::Carp::WarningsToBrowser;
         warn "testing one two three";
-    '),
+    }),
     qr/Content-type: text\/html.*<pre\b.*testing one two three/s,
     "response header auto-generated");
 
@@ -34,12 +34,17 @@ like($one_warning_zero_errors,
 
 
 my $one_warning_one_error = 
-    perl_subprocess('
+    perl_subprocess(q{
         use CGI::Carp qw(fatalsToBrowser);
         use CGI::Carp::WarningsToBrowser;
+        # Unfortunately, after CGI::Carp::die() forwards the die message to the
+        # browser, it goes ahead and does a real die() at the very end, using
+        # the original die() message. I don't need or want this message
+        # appearing during the tests.
+        close STDERR;
         warn "testing seven eight nine";
         die "dead";
-    ');
+    });
 
 # the javascript that moves the warnings to the top of the HTML document should
 # not be included if CGI::Carp's fatalsToBrowser() has been triggered
