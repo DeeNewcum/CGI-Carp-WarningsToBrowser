@@ -65,7 +65,7 @@
    },
    "version" : "0.01",
    "x_contributors" : [
-      "Dee Newcum <dee.newcum@gmail.com>"
+      "Dee Newcum <deenewcum@cpan.org>"
    ],
    "x_serialization_backend" : "JSON::PP version 4.02",
    "x_static_install" : 1
