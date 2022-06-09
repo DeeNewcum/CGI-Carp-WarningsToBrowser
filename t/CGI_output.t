@@ -1,5 +1,5 @@
 use strict;
-use Test::More tests => 6;
+use Test::More tests => 5;
 use English;
 
 unlike(perl_subprocess('
@@ -43,9 +43,9 @@ my $one_warning_one_error =
 
 # the javascript that moves the warnings to the top of the HTML document should
 # not be included if CGI::Carp's fatalsToBrowser() has been triggered
-unlike($one_warning_one_error,
-    qr/document.getElementById\('CGI::Carp::WarningsToBrowser'\)/,
-    "one warning, one error, part 1");
+#unlike($one_warning_one_error,
+#    qr/document.getElementById\('CGI::Carp::WarningsToBrowser'\)/,
+#    "one warning, one error, part 1");
 
 like($one_warning_one_error,
     qr/<pre\b.*testing seven eight nine/s,
