@@ -108,17 +108,17 @@ sub _print_warnings {
     }
 
     # print the warning-header
-    print <<'EOF';
+    print STDOUT <<'EOF';
     <div id="CGI::Carp::WarningsToBrowser" style="background-color:#faa; border:1px solid #000; padding:0.3em; margin-bottom:1em">
     <b>Perl warnings</b>
     <pre style="font-size:85%">
 EOF
     foreach my $warning (@WARNINGS) {
-        print HTML::Entities::encode_entities($warning);
+        print STDOUT HTML::Entities::encode_entities($warning);
     }
 
     # print the warning-footer
-    print <<'EOF';
+    print STDOUT <<'EOF';
 </pre></div>
 <!-- move the warnings <div> to the very top of the document -->
 <script type="text/javascript">
