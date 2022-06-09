@@ -1,3 +1,4 @@
+[![Actions Status](https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser/actions/workflows/test.yml/badge.svg)](https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser/actions)
 # NAME
 
 CGI::Carp::WarningsToBrowser - A version of [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp)'s warningsToBrowser()
@@ -38,8 +39,9 @@ Dee Newcum <deenewcum@cpan.org>
 
 # CONTRIBUTING
 
-Please use Github's issue tracker to file both bugs and feature requests.
-Contributions to the project in form of Github's pull requests are welcome.
+Please use [Github's issue tracker](https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser/issues)
+to file both bugs and feature requests. Contributions to the project in form of
+Github's pull requests are welcome.
 
 # LICENSE
 

@@ -58,7 +58,7 @@ the same terms as Perl itself.
 use strict;
 use warnings;
 
-use HTML::Entities ();
+use HTML::Entities 3.00 ();
 
 our @WARNINGS;
 

@@ -1,0 +1,5 @@
+# temp files that are spit out by `minil dist`
+Build
+MYMETA.json
+MYMETA.yml
+_build_params

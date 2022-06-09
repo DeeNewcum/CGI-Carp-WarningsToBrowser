@@ -1,7 +1,7 @@
 {
-   "abstract" : "A version of CGI::Carp's warningsToBrowser() that displays the warnings loudly and boldly",
+   "abstract" : "A version of L<CGI::Carp>'s warningsToBrowser() that displays the warnings loudly and boldly",
    "author" : [
-      "Dee Newcum <dee.newcum@gmail.com>"
+      "Dee Newcum <deenewcum@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.1.19, CPAN::Meta::Converter version 2.150010",
@@ -52,7 +52,21 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser/issues"
+      },
+      "homepage" : "https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser.git",
+         "web" : "https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser"
+      }
+   },
    "version" : "0.01",
+   "x_contributors" : [
+      "Dee Newcum <dee.newcum@gmail.com>"
+   ],
    "x_serialization_backend" : "JSON::PP version 4.02",
    "x_static_install" : 1
 }
