@@ -1,5 +1,6 @@
 # temp files that are cleaned up by `minil clean`
-Build
-MYMETA.json
-MYMETA.yml
-_build_params
+/Build
+/MYMETA.json
+/MYMETA.yml
+/_build_params
+/CGI-Carp-WarningsToBrowser-*
