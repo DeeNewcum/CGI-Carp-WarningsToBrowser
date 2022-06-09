@@ -1,4 +1,4 @@
-# temp files that are spit out by `minil dist`
+# temp files that are cleaned up by `minil clean`
 Build
 MYMETA.json
 MYMETA.yml
