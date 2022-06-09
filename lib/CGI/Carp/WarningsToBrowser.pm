@@ -28,8 +28,15 @@ them, as part of the "L<shift left|https://devopedia.org/shift-left>" effort.
 
 =head1 HANDLING ERRORS
 
-This module does not handle fatal errors, as L<CGI::Carp> seems to do an
+This module does not handle fatal errors, because L<CGI::Carp> seems to do an
 adequate job at that task.
+
+=head1 COMPATIBILITY
+
+Javascript must be enabled on the browser side, otherwise the warnings will
+appear at the very bottom of the document. (the warnings are actually output in
+an C<END { }> block, and three lines of Javascript are used to move them to the
+top of the HTML page)
 
 =head1 AUTHOR
 
@@ -37,8 +44,9 @@ Dee Newcum <deenewcum@cpan.org>
 
 =head1 CONTRIBUTING
 
-Please use Github's issue tracker to file both bugs and feature requests.
-Contributions to the project in form of Github's pull requests are welcome.
+Please use L<Github's issue tracker|https://github.com/DeeNewcum/CGI-Carp-WarningsToBrowser/issues>
+to file both bugs and feature requests. Contributions to the project in form of
+Github's pull requests are welcome.
 
 =head1 LICENSE
 

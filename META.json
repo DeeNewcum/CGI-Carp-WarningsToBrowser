@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "A version of CGI::Carp's warningsToBrowser() that displays the warnings loudly and boldly",
    "author" : [
       "Dee Newcum <dee.newcum@gmail.com>"
    ],

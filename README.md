@@ -22,8 +22,15 @@ them, as part of the "[shift left](https://devopedia.org/shift-left)" effort.
 
 # HANDLING ERRORS
 
-This module does not handle fatal errors, as [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp) seems to do an
+This module does not handle fatal errors, because [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp) seems to do an
 adequate job at that task.
+
+# COMPATIBILITY
+
+Javascript must be enabled on the browser side, otherwise the warnings will
+appear at the very bottom of the document. (the warnings are actually output in
+an `END { }` block, and three lines of Javascript are used to move them to the
+top of the HTML page)
 
 # AUTHOR
 
