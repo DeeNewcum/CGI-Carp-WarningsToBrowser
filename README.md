@@ -1,0 +1,40 @@
+# NAME
+
+CGI::Carp::WarningsToBrowser - A version of [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp)'s warningsToBrowser()
+that displays the warnings loudly and boldly
+
+# SYNOPSIS
+
+Put this at the top of your CGI script (the earlier the better, otherwise some
+warnings won't be captured):
+
+    use CGI::Carp::WarningsToBrowser;
+
+Warnings will now be displayed at the very top of the web page, rather than
+hidden in HTML comments like [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp)'s version.  This is intended mainly
+for dev and test environments, not for prod, so it's a good idea to use [if](https://metacpan.org/pod/if):
+
+    use if $is_dev, 'CGI::Carp::WarningsToBrowser';
+
+The author feels that it's important to expose warnings early in the software
+development lifecycle, as part of the "[shift
+left](https://devopedia.org/shift-left)" effort.
+
+# HANDLING ERRORS
+
+This module does not handle fatal errors. The author feels that [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp)
+does an adequate job at accomplishing that task.
+
+# AUTHOR
+
+Dee Newcum <deenewcum@cpan.org>
+
+# CONTRIBUTING
+
+Please use Github's issue tracker to file both bugs and feature requests.
+Contributions to the project in form of Github's pull requests are welcome.
+
+# LICENSE
+
+This library is free software; you may redistribute it and/or modify it under
+the same terms as Perl itself.
