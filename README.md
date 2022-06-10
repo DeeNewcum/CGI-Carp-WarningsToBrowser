@@ -1,7 +1,7 @@
 # NAME
 
-CGI::Carp::WarningsToBrowser - A version of [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp)'s warningsToBrowser()
-that displays the warnings loudly and boldly
+CGI::Carp::WarningsToBrowser - CGI routine to display warnings within the
+browser, loudly and boldly
 
 # RATIONALE
 

@@ -1,5 +1,5 @@
 {
-   "abstract" : "A version of L<CGI::Carp>'s warningsToBrowser() that displays the warnings loudly and boldly",
+   "abstract" : "CGI routine to display warnings within the browser, loudly and boldly",
    "author" : [
       "Dee Newcum <deenewcum@cpan.org>"
    ],

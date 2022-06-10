@@ -6,8 +6,8 @@ our $VERSION = 0.02;
 
 =head1 NAME
 
-CGI::Carp::WarningsToBrowser - A version of L<CGI::Carp>'s warningsToBrowser()
-that displays the warnings loudly and boldly
+CGI::Carp::WarningsToBrowser - CGI routine to display warnings within the
+browser, loudly and boldly
 
 =head1 RATIONALE
 
