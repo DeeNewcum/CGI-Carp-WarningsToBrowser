@@ -6,14 +6,14 @@ browser, loudly and boldly
 # RATIONALE
 
 [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp) provides `warningsToBrowser` functionality. However, the _only_
-way that CGI::Carp can report those warnings is in the HTML comments, which
-makes them very easy for developers to miss.
+way that CGI::Carp can report warnings is inside HTML comments, which makes it
+very easy for developers to miss them.
 
 The author feels that it's important to expose warnings as early as possible in
-the software development lifecycle, preferably by the same developer who created
-them, as part of the "[shift left](https://devopedia.org/shift-left)" effort.
-"Shift left" basically means that the earlier in the SDLC that a problem can be
-found, the cheaper it is to fix it.
+the software development lifecycle, preferably to the same developer who created
+them, as part of the "[shift left](https://devopedia.org/shift-left)" effort
+(which is the principle that the earlier in the SDLC that a problem can be
+found, the cheaper it will be to fix).
 
 # SYNOPSIS
 
