@@ -5,6 +5,10 @@ that displays the warnings loudly and boldly
 
 # RATIONALE
 
+[CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp) provides `warningsToBrowser` functionality. However, the _only_
+way that CGI::Carp can report those warnings is in the HTML comments, which
+makes them very easy for developers to miss.
+
 The author feels that it's important to expose warnings as early as possible in
 the software development lifecycle, preferably by the same developer who created
 them, as part of the "[shift left](https://devopedia.org/shift-left)" effort.
@@ -18,9 +22,9 @@ warnings might not get captured):
 
     use CGI::Carp::WarningsToBrowser;
 
-Warnings will now be displayed at the very top of the web page, rather than
-hidden in HTML comments like [CGI::Carp](https://metacpan.org/pod/CGI%3A%3ACarp)'s version.  This is intended mainly
-for dev and test environments, not for prod, so it's a good idea to use [if](https://metacpan.org/pod/if):
+Warnings will now be displayed at the very top of the web page.  This is
+intended mainly for dev and test environments, not for prod, so it's a good idea
+to use [if](https://metacpan.org/pod/if):
 
     use if $is_dev, 'CGI::Carp::WarningsToBrowser';
 
