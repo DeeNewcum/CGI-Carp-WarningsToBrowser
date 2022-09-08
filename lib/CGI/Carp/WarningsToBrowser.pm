@@ -117,7 +117,7 @@ sub _print_warnings {
 
     # print the warning-header
     print STDOUT <<'EOF';
-    <div id="CGI::Carp::WarningsToBrowser" style="background-color:#faa; border:1px solid #000; padding:0.3em; margin-bottom:1em">
+    <div id="CGI::Carp::WarningsToBrowser" style="background-color:#faa; border:4px dotted #a0a; padding:0.3em; margin-bottom:1em">
     <b>Perl warnings</b>
     <pre style="font-size:85%">
 EOF
